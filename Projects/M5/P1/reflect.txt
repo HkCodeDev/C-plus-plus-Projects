@@ -1,0 +1,39 @@
+/*****************************************************************************
+ Citation and Sources:
+                  Milestone 5.1
+                  file: PreTriage.h
+Full Name : Hoda Karimi
+Student ID# : 138611223
+ Email : hkarimi9@myseneca.ca
+ Section : NII
+ Date: April 5 2024
+    Authenticity Declaration :
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.This submitted
+piece of work is entirely of my own creation.
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my workshops and assignments.
+* ****************************************************************************/
+
+This project looked like something practical in the field, maybe even something that I might create in my job in computer programming.
+At first, the concept of object oriented programming was an alien concept to me, especially inheritance.
+I couldn't undrestand why inheritance was so important when I first read the notes because we were already
+including header files, why did we need to use inheritance at all? Why we need hierarchy at all? 
+When I tried to create them for the project
+(and the workshops) I undrestood the importance of inheritance and how useful it can be in coding. I saw this in Patient.cpp and
+TestPatien and TriagePatient and while it was a bit challenging, at the end of the day, seeing the result in a way proved its
+practicality.
+
+In this example, Patient created a foundation for the derived classes (TestPatien and TriagePatient). This
+Allowed reusability, which was also a weak point as well. It happened many times that I created a (seemingly) flawless base class,
+only to later change it because the derived part didn't work. And the worst part is that it's not always obvious which problem is from
+which part, derived or based class? This approach creates a new kind of complexity. Yes, it's much better than writting a long-single
+code, but if we didn't have the instructions and details, figuring these all out from scratch seemed very hard and the long-single code
+seems like a better option in this situation to save time. 
+
+This was also the case for other modules like IOAble. I was afraid that by creating new modules, something go south and It forces me
+to change my code. And then by changing the base, another thing fails in derived module and I find myself in a never ending loop of 
+correcting new errors and output mismatch. This accured many times but hopefully it wasn't as bad as I thought.
+
+
+
