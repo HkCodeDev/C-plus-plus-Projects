@@ -1,0 +1,59 @@
+/*****************************************************************************
+     Reflect             
+Workshop - #3 
+Full Name : Hoda Karimi
+Student ID# : 138611223
+ Email : hkarimi9@myseneca.ca
+ Section : NII
+    Authenticity Declaration :
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.This submitted
+piece of work is entirely of my own creation.
+* ****************************************************************************/
+In this workshop, I used istream types such as ignore and getline,
+which made my job easier. Like for example, in Vendor.cpp, I wrote
+my code in a way that unfortunately, produced the error message
+before I even choose my flavor type, so I needed to get rid of
+that. Using cin.ignore(256, '\n'); in line 51, allowed me to
+clear the buffer and 
+another thing is Alignment and Formatting. As you can see, I used
+both ostream type, such is width, setf and unsetf, and <iomanip>
+library, using setw(int w) and setprecision(int p). Getting
+used to this method takes time and was quiet a challenge
+for me. It was much harder to do compared to something similar c 
+language. 
+I also used atoi, converting string to integer to see
+what happens.When users input their choice (selecting a flavor), the data comes in as a string because
+ std::cin.getline(inputBuffer, 256) captures the input as text, even if the user types a number. 
+This happens because standard input does not inherently distinguish between different data types.
+everything entered is treated as text. That is a problem becuase we need  Numerical Evaluation.
+We also need to detect if the number entered is actually a number, because as seen in the output,
+entering characters instead of integers results in different kind of error message. 
+The whole process was hard to undrestand because I knew very little about atoi, so I needed
+to study it for a while and see how it exactly works. (I found atoi in Appendices section of lecture notes)
+Another thing that was difficult for me to do was deep copying.
+Deep copying is essential in C++ when an object owns resources that are allocated dynamically, such as memory allocated on the heap. 
+A deep copy involves creating a copy of the allocated resource itself, not just copying the address (pointer) to the resource. 
+This ensures that the original and the copy can operate independently, modifying or deleting their resources without affecting 
+each other.
+This operator is used to copy the state of one Icecream object (other) 
+into another Icecream object (the one this method is called on). 
+The method operator= is defined to take a constant reference to another Icecream object named other and return a reference to an Icecream object. 
+The return type Icecream& allows for chaining assignment operations:
+Icecream& Icecream::operator=(const Icecream& other)
+and if (this != &other), checks if the object being assigned to (*this) is not the same as the object being copied from (other).
+ This is important because without this check, self-assignment would lead to deleting 
+the object's own resources (such as dynamically allocated memory), which could result in data loss or memory corruption.
+I used helper function as well.
+The setFlavor function serves as a helper function in this context. 
+Its role is to encapsulate the logic for managing the flavor attribute's memory, making it easier to correctly perform deep copies.
+ 
+
+
+
+
+
+
+
+
+
