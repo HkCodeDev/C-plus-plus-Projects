@@ -1,0 +1,46 @@
+/*****************************************************************************
+                  Workshop - #7 (Part - 2)>
+                  File: reflect
+Full Name : Hoda Karimi
+Student ID# : 138611223
+ Email : hkarimi9@myseneca.ca
+ Section : NII
+    Authenticity Declaration :
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.This submitted
+piece of work is entirely of my own creation.
+* ****************************************************************************/
+From the workshop 7 and the provided code, 
+several important concepts in C++ programming have been highlighted and practiced:
+Inheritance: 
+Creating a derived class (SavingsAccount) from a base class (BankAccount) demonstrates the principle of inheritance. 
+This allows SavingsAccount to inherit member variables and functions from BankAccount, 
+promoting code reuse and organizational clarity. 
+The constructor of SavingsAccount initializes both its own members and those 
+inherited from BankAccount using an initializer list, 
+showcasing how derived classes can extend the functionality of base classes.
+
+Shadowing Member Functions: 
+The write and read functions in SavingsAccount override the virtual functions declared in BankAccount. 
+This demonstrates how derived classes can provide their specific implementations of
+ functions defined in the base class, allowing for polymorphic behavior. 
+The use of virtual in the base class and override in the derived class makes the intention 
+clear and helps the compiler catch errors.
+
+Accessing Shadowed Member Functions: Through the process of overriding, 
+SavingsAccount can still access the write and read functions of its base class (BankAccount) by calling them directly 
+(e.g., BankAccount::write(out) within SavingsAccount::write). 
+This shows how to access shadowed or overridden member functions, 
+which is useful when the derived class wants to extend rather than completely replace the functionality of the base class.
+
+The same thing can be applied to Ms2:
+Inherit a derived class (Box) from a base class (IOAble).
+Shadow a base class member function (write and read) with derived class member functions (Box::write and Box::read).
+Access a shadowed member function (IOAble::write and IOAble::read) that is defined in a base class.
+
+I also used override keyword. This keyword won't change the code in this context, but
+It helps in ensuring that the function I intend to override actually exists in the base class. 
+If I mistakenly misspell the function name or the signature doesn't match exactly, 
+the compiler will issue an error, alerting me to the mistake. 
+In This scenario however, if I delete the override keyword, nothing changes but I decided to include
+it because it makes the code more readable espacially later on when I need to review my code.
