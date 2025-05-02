@@ -1,0 +1,33 @@
+/*****************************************************************************
+                  Reflect Workshop - #2
+Full Name : Hoda Karimi
+Student ID# : 138611223
+ Email : hkarimi9@myseneca.ca
+ Section : NII
+    Authenticity Declaration :
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.This submitted
+piece of work is entirely of my own creation.
+* ****************************************************************************/
+
+Allocating and deallocating are showcased in the handling of Guest objects within a Room. 
+Specifically, the use of new and delete[] for dynamic memory allocation and deallocation ensures 
+proper management of memory resources. This is crucial in scenarios where the number of guests can vary,
+ necessitating flexible memory usage. The set and vacate functions in Guest.cpp illustrate the allocation of memory for 
+individual strings (m_firstName and m_lastName), and their subsequent deallocation, 
+thereby preventing memory leaks and ensuring efficient memory use.
+The code makes good use of references, particularly in functions like set, 
+book, and vacate, which modify the state of Room and Guest objects. 
+Passing objects by reference is crucial in these scenarios to ensure that modifications are 
+made to the actual objects rather than their copies.
+In case of overlaoding functions, we have the example function, print.
+Function overloading occurs when multiple functions have the same name but 
+different parameters (in type or number) within the same scope, allowing different implementations based on the arguments used.
+In Room.cpp: 
+The print function is designed to handle a Room object. 
+It checks the number of guests in the room and prints the room number and guest details accordingly. 
+If the room has no guests, it prints "Empty Room!".
+In Guest.cpp: 
+The print function here is designed for a Guest object. 
+It checks if the guest's names are set and prints them, appending "(Child)" if the guest is not an adult. 
+If the names are not set, it prints "Vacated!".

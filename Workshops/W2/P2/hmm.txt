@@ -1,0 +1,37 @@
+ void print(const Room& room) {
+     static bool lastRoomEmpty = false; // Static variable to remember if the last room checked was empty
+
+     // Check if the current room is empty
+     bool isEmpty = true;
+     for (int i = 0; i < room.m_noOfGuests; i++) {
+         if (room.m_guests[i].m_firstName != nullptr) {
+             isEmpty = false;
+             break; // Break as soon as a non-vacated guest is found
+         }
+     }
+
+     // Print room number only when there are guests (inferring "Room booking data")
+     if (!isEmpty) {
+         cout << "Room Number: " << room.m_roomNumber << endl;
+         for (int i = 0; i < room.m_noOfGuests; i++) {
+             cout << "    ";
+             print(room.m_guests[i]);
+         }
+         lastRoomEmpty = false;
+     }
+     else if (isEmpty && !lastRoomEmpty) {
+         cout << "Empty Room!" << endl;
+         lastRoomEmpty = true;
+     }
+ }
+
+
+
+
+ for (int i = 0; i < room.m_noOfGuests; i++) {
+     cout << "    ";
+     print(room.m_guests[i]);
+     if (room.m_guests[i].m_firstName != nullptr){
+         isEmpty = false;
+     }
+ }
