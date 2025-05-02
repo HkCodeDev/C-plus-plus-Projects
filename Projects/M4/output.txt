@@ -1,0 +1,133 @@
+Milestone 4 tester
+Testing TestPatient:
+Enter the following values when prompted:
+aaa
+123123123
+------------------------
+
+Enter Patient information:
+Name: aaa
+OHIP: 123123123
+
+Enter the following values when prompted:
+bbb
+234234234
+------------------------
+
+Enter Patient information:
+Name: bbb
+OHIP: 234234234
+
+Patients information entered:
+Contagion TEST
+Ticket No: 1, Issued at: 12:34
+aaa, OHIP: 123123123
+
+Contagion TEST
+Ticket No: 2, Issued at: 12:37
+bbb, OHIP: 234234234
+
+CSV output:
+C,aaa,123123123,1,12:34
+C,bbb,234234234,2,12:37
+
+Linear output:
+aaa..................................................123123123    1 12:34
+
+bbb..................................................234234234    2 12:37
+
+
+Testing CSV input;
+   Reading "ccc,333333333,10,23:45" from input.txt.
+
+Data read:
+Contagion TEST
+Ticket No: 1, Issued at: 12:34
+, OHIP: 123123123
+
+Testing global ticket number variable:
+Enter the following values when prompted:
+ddd
+345345345
+------------------------
+
+Name: ddd
+OHIP: 345345345
+Patient information entered:
+Contagion TEST
+Ticket No: 2, Issued at: 23:55
+ddd, OHIP: 345345345
+
+Testing TriagePatient:
+Enter the following values when prompted:
+aaa
+123123123
+aaa aaa aaa
+------------------------
+
+Enter Patient information:
+Name: aaa
+OHIP: 123123123
+Symptoms: aaa aaa aaa
+
+Enter the following values when prompted:
+bbb
+234234234
+bbb bbb bbb
+------------------------
+
+Enter Patient information:
+Name: bbb
+OHIP: 234234234
+Symptoms: bbb bbb bbb
+
+Patients information entered:
+TRIAGE
+Ticket No: 1, Issued at: 12:34
+aaa, OHIP: 123123123
+Symptoms: aaa aaa aaa
+
+TRIAGE
+Ticket No: 2, Issued at: 12:54
+bbb, OHIP: 234234234
+Symptoms: bbb bbb bbb
+
+CSV output:
+T,aaa,123123123,1,12:34Symptoms: aaa aaa aaa
+
+T,bbb,234234234,2,12:54Symptoms: bbb bbb bbb
+
+
+Linear output:
+aaa..................................................123123123    1 12:34
+Symptoms: aaa aaa aaa
+
+bbb..................................................234234234    2 12:54
+Symptoms: bbb bbb bbb
+
+
+Testing CSV input;
+   Reading "ccc,333333333,10,23:45,ccc ccc ccc" from input.txt.
+
+Data read:
+TRIAGE
+Ticket No: 1, Issued at: 12:34
+, OHIP: 123123123
+Symptoms:
+
+Testing global ticket number variable:
+Enter the following values when prompted:
+ddd
+444444444
+ddd ddd ddd
+------------------------
+
+Name: ddd
+OHIP: 444444444
+Symptoms: ddd ddd ddd
+
+Patient information entered:
+TRIAGE
+Ticket No: 2, Issued at: 23:55
+ddd, OHIP: 444444444
+Symptoms: ddd ddd ddd
