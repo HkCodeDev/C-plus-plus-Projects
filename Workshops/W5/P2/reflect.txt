@@ -1,0 +1,31 @@
+/*****************************************************************************
+                  REFLECT Workshop - #5
+Full Name : Hoda Karimi
+Student ID# : 138611223
+ Email : hkarimi9@myseneca.ca
+ Section : NII
+    Authenticity Declaration :
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.This submitted
+piece of work is entirely of my own creation.
+* ****************************************************************************/
+The overloading operators like << was challenging for me because for a moment, I didn't know 
+what parameter should I put in it. So the overlaoding wasn't a challenge by itself
+It's just another additional code made my job harder.
+Overlaoding unary operators in the first workshop was another thing that I had to
+pay attention to, because prefix and postfix tend to look a like but their return type
+and how they treat objects are different. In this situation, using prefix operator
+seems to be the correct option.
+The display method uses std::ostream& (often std::cout for console output) to generate formatted text output of a Hero object's state.
+This method demonstrates how to create formatted text output that includes iterating through an array of Power objects 
+and displaying each one's name and rarity, followed by the hero’s power level. This part of the code is essential
+ for providing a user-friendly representation of an object's state.
+In C++, the friend keyword allows a function or another class to access private and protected 
+members of the class in which it is declared. 
+comparison operators (operator< and operator>) and I/O operators (operator<< and operator>>) are declared as friends of 
+the Hero class. This design choice allows these operators to access private data members (name, powers, numPowers, powerLevel) 
+directly, which is necessary for their operations.
+For example, operator< and operator> need to compare 
+powerLevel of two Hero objects to determine their ordering. 
+Since powerLevel is a private member, these operators would not have access to it without being declared as friends.
+
