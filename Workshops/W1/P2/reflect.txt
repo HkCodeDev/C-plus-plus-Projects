@@ -1,0 +1,31 @@
+/*****************************************************************************
+                  Reflect of Workshop1
+Full Name : Hoda Karimi
+Student ID# : 138611223
+    Email : hkarimi9@myseneca.ca
+    Section : NII
+    Authenticity Declaration :
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider.This submitted
+piece of work is entirely of my own creation.
+* ****************************************************************************/
+Calling functions from File.cpp was bit of a challenge for me and using them in my code wasn't anything but easy.
+Also I needed some reminders for file section of ipc144 and I think this was the hardest part.
+I used printBar instead in the stMark.cpp. Modifieing printGraph didn't work as expected and was a bit of a challenge. 
+Every time I tried to use it in stMark.cpp, something went wrong, like for example the end bars changed their places according
+to the number of * that were printed(I also changed printBar here too). 
+Using printInt and printBar plus some extra code made it easier.
+Another challenge I had was with the number of * that were printed. First time around I didn't observed the output examples
+carefully and I assumed that it printed the numbers exactly so I changed some parts of the code. But after runnig the test for
+group3.csv, I figured out that I made a horrible mistake and was forced to start over.
+Sorting was another problem of mine, because in later tests, the part that printed * and numbers behind the bars were descending
+and took me a lot of time to figure out what was the problem.
+Using bool was something new and It's actually really good; better than 
+creating flags. It's cleaner, easier to keep track of and pretty straight forward (using true/false instead of 0 & 1)
+Another thing was "callback" functions, using a function as a parameter of another function. 
+I don't remember if we had this in privious semester in ipc144 (I think we had, maybe I forgot) 
+but during my break I saw an example of it and wanted to try it.
+Using cout was annoying at first because I made some mistakes in the first try, but now I know that this is a better version
+of scanf because it doesn't need format specifiers and this is a huge advantage in my eyes. I no longer need to
+check the type and the specifiers every single time.
+
